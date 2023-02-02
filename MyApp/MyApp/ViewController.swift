@@ -17,11 +17,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func plusTapped(_ sender: UIButton) {
-        numberLabel.text = String((Int(numberLabel.text ?? "0") ?? 0) + 1)
+        numberLabel.text = String((Double(numberLabel.text ?? "0") ?? 0) + 1)
     }
     
     @IBAction func minusTapped(_ sender: UIButton) {
-        numberLabel.text = String((Int(numberLabel.text ?? "0") ?? 0) - 1)
+        numberLabel.text = String((Double(numberLabel.text ?? "0") ?? 0) - 1)
+    }
+    
+    @IBAction func divideButton(_ sender: UIButton) {
+        numberLabel.text = String((Double(numberLabel.text ?? "0") ?? 0) / 2)
+    }
+    @IBAction func multButton(_ sender: UIButton) {
+        numberLabel.text = String((Double(numberLabel.text ?? "0") ?? 0) * 2)
     }
 }
 

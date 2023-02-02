@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-2E-Mpu">
-                                <rect key="frame" x="177.66666666666666" y="525.66666666666663" width="38" height="82"/>
+                                <rect key="frame" x="177.66666666666666" y="525.33333333333337" width="38" height="82"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="58"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="+">
@@ -27,12 +27,38 @@
                                     <action selector="plusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="da6-Xd-Uk5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYI-LX-ySM">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYI-LX-ySM">
+                                <rect key="frame" x="99" y="395" width="195" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="TnE-lY-TJ5"/>
+                                    <constraint firstAttribute="height" constant="62" id="XQC-rf-VFj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lps-5f-tpA">
+                                <rect key="frame" x="319" y="390" width="58" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="2x">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="multButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Sz-3F-0wa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtt-KH-rCA">
+                                <rect key="frame" x="16" y="390" width="46" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="/2">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="divideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6c-cb-bmd"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXA-Lu-xKZ">
                                 <rect key="frame" x="181.66666666666666" y="244.66666666666663" width="30" height="82"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="58"/>
@@ -48,12 +74,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="vMO-2E-Mpu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QPU-lG-gGP"/>
-                            <constraint firstItem="vMO-2E-Mpu" firstAttribute="top" secondItem="PYI-LX-ySM" secondAttribute="bottom" constant="89" id="QcY-Ew-afH"/>
-                            <constraint firstItem="aXA-Lu-xKZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sqn-1M-gzF"/>
-                            <constraint firstItem="PYI-LX-ySM" firstAttribute="top" secondItem="aXA-Lu-xKZ" secondAttribute="bottom" constant="89" id="efb-TH-iR8"/>
-                            <constraint firstItem="PYI-LX-ySM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uso-VZ-rKp"/>
-                            <constraint firstItem="PYI-LX-ySM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xKF-wj-aVZ"/>
+                            <constraint firstItem="vMO-2E-Mpu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0u6-wv-RCJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PYI-LX-ySM" secondAttribute="trailing" constant="99" id="3ez-1p-sdd"/>
+                            <constraint firstItem="aXA-Lu-xKZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6HM-Fq-auT"/>
+                            <constraint firstItem="PYI-LX-ySM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="8v5-dP-Ln7"/>
+                            <constraint firstItem="PYI-LX-ySM" firstAttribute="leading" secondItem="vtt-KH-rCA" secondAttribute="trailing" constant="37" id="9br-yE-I9L"/>
+                            <constraint firstItem="PYI-LX-ySM" firstAttribute="top" secondItem="aXA-Lu-xKZ" secondAttribute="bottom" constant="68.329999999999998" id="dN7-op-F3U"/>
+                            <constraint firstItem="vMO-2E-Mpu" firstAttribute="top" secondItem="PYI-LX-ySM" secondAttribute="bottom" constant="68.329999999999998" id="eQu-KT-ALi"/>
+                            <constraint firstItem="vtt-KH-rCA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ef2-K2-KNQ"/>
+                            <constraint firstItem="Lps-5f-tpA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fLl-Te-oYQ"/>
+                            <constraint firstItem="Lps-5f-tpA" firstAttribute="leading" secondItem="PYI-LX-ySM" secondAttribute="trailing" constant="25" id="lVL-mo-Lco"/>
                         </constraints>
                     </view>
                     <connections>
@@ -62,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="4"/>
+            <point key="canvasLocation" x="84.732824427480907" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
