@@ -30,5 +30,8 @@ class ViewController: UIViewController {
     @IBAction func multButton(_ sender: UIButton) {
         numberLabel.text = String((Double(numberLabel.text ?? "0") ?? 0) * 2)
     }
+    @IBAction func clearButton(_ sender: UIButton) {
+        numberLabel.text = "0"
+    }
 }
 

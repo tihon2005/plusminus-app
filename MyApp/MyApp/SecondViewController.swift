@@ -28,4 +28,7 @@ class SecondViewController: UIViewController {
     @IBAction func divideButton(_ sender: UIButton) {
         numberLabel.text = String((Double(numberLabel.text ?? "0") ?? 0) / 4)
     }
+    @IBAction func clearButton(_ sender: UIButton) {
+        numberLabel.text = "0"
+    }
 }
