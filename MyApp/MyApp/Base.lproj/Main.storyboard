@@ -227,7 +227,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xoK-3o-XXh"/>
                     <connections>
-                        <outlet property="numberLabel" destination="N7v-RB-6nr" id="xze-7o-GkU"/>
+                        <outlet property="numberLabel" destination="N7v-RB-6nr" id="Tpw-Jd-8FF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjw-8u-KLb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

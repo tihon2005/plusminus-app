@@ -33,5 +33,9 @@ class ViewController: UIViewController {
     @IBAction func clearButton(_ sender: UIButton) {
         numberLabel.text = "0"
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC : SecondViewController = segue.destination as! SecondViewController
+        destinationVC.textOfLabel = numberLabel.text!
+    }
 }
 

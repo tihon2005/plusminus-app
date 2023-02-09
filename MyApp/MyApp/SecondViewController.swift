@@ -8,12 +8,13 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
     @IBOutlet weak var numberLabel: UILabel!
+    var textOfLabel : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         numberLabel.font = UIFont.boldSystemFont(ofSize: 25)
-        numberLabel.text = "0"
+        numberLabel.text = textOfLabel
     }
 
     @IBAction func minusTapped(_ sender: UIButton) {
@@ -30,5 +31,9 @@ class SecondViewController: UIViewController {
     }
     @IBAction func clearButton(_ sender: UIButton) {
         numberLabel.text = "0"
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC : ViewController = segue.destination as! ViewController
+        destinationVC.numberLabel.text = self.numberLabel.text
     }
 }
